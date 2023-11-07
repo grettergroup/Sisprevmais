@@ -1,0 +1,40 @@
+{
+    "UrlBase" : "https://translate.google.com/",
+    "BaseDados" : "/esocial_testeaut",
+    "Caminho" : "/api/api",
+    "OrigemDados" : "TESTEAUT",
+    
+    "Endpoints" : {
+        "TabelaRubrica" : {
+            "Controller" : "/TabelaRubrica",
+            "Metodos" : {
+                "PesquisarS1010" : "/PesquisarS1010",
+                "PesquisarEnviadosS1010" : "/PesquisarEnviadosS1010"
+            }
+        },
+        "EventosPeriodicos" : {
+            "Controller" : "/EventosPeriodicos",
+            "Metodos" : {
+                "Pesquisar" : "/Pesquisar",
+                "PesquisarS1200" : "/PesquisarS1200",
+                "PesquisarEnviadosS1200" : "/PesquisarEnviadosS1200",
+                "PesquisarEnviadosS1202" : "/PesquisarEnviadosS1202",
+                "PesquisarEnviadosS1210" : "/PesquisarEnviadosS12101"
+            }
+        },
+        "EventosNaoPeriodico" : {
+            "Controller" : "/EventosNaoPeriodico",
+            "Metodos" : {
+                "Pesquisar" : "/Pesquisar",
+                "PesquisarS2230" : "/PesquisarS2230",
+                "PesquisarS2300" : "/PesquisarS2300",
+                "PesquisarS2300Envio" : "/PesquisarS2300Envio",
+                "PesquisarS2200" : "/PesquisarS2200"
+            }
+        },
+        "OrigemDados" : {
+            "Controller" : "/OrigemDados",
+            "Metodos" : "OrigemDados"
+        }
+    }
+}

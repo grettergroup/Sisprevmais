@@ -1,0 +1,6 @@
+node_modules
+.bin
+downloads
+reports
+cypress.env.json
+

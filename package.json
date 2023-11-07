@@ -1,0 +1,42 @@
+{
+  "name": "sisprevmais.agendaassessoria.test",
+  "version": "1.0.0",
+  "description": "Start automação Sisprevmais",
+  "main": "index.js",
+  "scripts": {
+    "build": "run rollup -c",
+    "script": "cypress run --browser chrome & node cypress.report.js && start cypress/reports/report-html/index.html",
+    "start": "npm run script"
+  },
+  "keywords": [
+    "Cypress",
+    "Cucumber",
+    "BDD"
+  ],
+  "author": "Flávio Gretter",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.4.0",
+    "multiple-cucumber-html-reporter": "^3.4.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.5",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cucumber-json-report-formatter": "^0.1.4",
+    "cypress-sql-server": "^1.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/src/*/**/*.steps.js",
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "json": {
+      "enabled": true,
+      "formatter": "cypress/reports/json/cucumber-json-formatter",
+      "output": "cypress/reports/json/cucumber-report.json"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/messages/cucumber-messages.ndjson"
+    }
+  }
+}
