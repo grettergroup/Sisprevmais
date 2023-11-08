@@ -1,5 +1,5 @@
 {
-    "UrlBase" : "https://translate.google.com/",
+    "UrlBase" : "http://localhost:5173/login",
     "BaseDados" : "/esocial_testeaut",
     "Caminho" : "/api/api",
     "OrigemDados" : "TESTEAUT",

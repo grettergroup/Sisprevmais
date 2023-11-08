@@ -3,7 +3,7 @@ const acesso = require('../../../../../cypress.env.json');
 
 class LoginPage {
 
-    acessaTranslateGoogle(){
+    logaSisprevmais(){
         cy.visit('/')
     }
 

@@ -28,8 +28,8 @@ module.exports = defineConfig({
     viewportHeight: 720,
     experimentalRunAllSpecs: true,
     specPattern: [
-      'cypress/src/*/**/api.feature',
-      'cypress/src/*/**/*.feature',
+      'cypress/src/api/**/api.feature',
+      'cypress/src/e2e/**/*.feature',
     ], 
   }
 });
